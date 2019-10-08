@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Order">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:background="@color/toolbar"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backbutton"
+            android:src="@drawable/iron"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:weightSum="8"
+        android:id="@+id/lin1"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/tshirt"
+            android:layout_margin="2dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="T-Shirt \n Rs 5"
+            android:gravity="center"
+            android:id="@+id/tshirttxt"
+            android:textSize="20dp"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_remove_black_24dp"
+            app:backgroundTint="@color/toolbar"
+            app:fabSize="mini" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:id="@+id/quantity1"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:backgroundTint="@color/toolbar"
+
+            android:layout_weight="1"
+            android:src="@drawable/ic_add_black_24dp"
+            app:fabSize="mini" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin1"
+        android:weightSum="8"
+        android:id="@+id/lin2"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_shirt"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Shirt \n Rs 5"
+            android:gravity="center"
+            android:id="@+id/shirttxt"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab3"
+            app:fabSize="mini"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity2"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            android:id="@+id/fab4"
+            app:backgroundTint="@color/toolbar"
+
+            app:fabSize="mini"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin2"
+        android:weightSum="8"
+        android:id="@+id/lin3"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_long_pants"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Pants \n Rs 7"
+            android:gravity="center"
+            android:id="@+id/panttxt"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:fabSize="mini"
+            app:backgroundTint="@color/toolbar"
+
+
+            android:id="@+id/fab5"            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity3"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:fabSize="mini"
+            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab6"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin3"
+        android:weightSum="8"
+        android:id="@+id/lin4"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/shorts"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Shorts \n Rs 5"
+            android:gravity="center"
+            android:id="@+id/shorttxt"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+android:id="@+id/fab7"
+            app:backgroundTint="@color/toolbar"
+
+            app:fabSize="mini"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity4"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab8"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin4"
+        android:weightSum="8"
+        android:id="@+id/lin5"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_coat"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Suit \n Rs 15 "
+            android:gravity="center"
+            android:id="@+id/suittxt"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:fabSize="mini"
+            app:backgroundTint="@color/toolbar"
+
+
+            android:id="@+id/fab9"            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity5"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab10"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin5"
+        android:weightSum="8"
+        android:id="@+id/lin6"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/top"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Top \n Rs 5"
+            android:id="@+id/toptxt"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+android:id="@+id/fab11"                    app:backgroundTint="@color/toolbar"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity6"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab12"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin6"
+        android:weightSum="8"
+        android:id="@+id/lin7"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/skirt"
+            android:layout_margin="2dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Skirt \n Rs 5"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab13"            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity7"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            app:fabSize="mini"            app:backgroundTint="@color/toolbar"
+
+
+            android:id="@+id/fab14"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin7"
+        android:weightSum="8"
+        android:id="@+id/lin8"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/saree"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Saree \n Rs 10"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab15"            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity8"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab16"            android:background="@android:color/holo_blue_dark"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin8"
+        android:weightSum="8"
+        android:id="@+id/lin9"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@color/toolbar"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Salwar \n Rs 7"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab17"            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity9"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab18"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin9"
+        android:weightSum="8"
+        android:id="@+id/lin10"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_nightgown"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Gown \n Rs 10"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab19"            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:id="@+id/quantity10"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_weight="1"            app:backgroundTint="@color/toolbar"
+
+            android:id="@+id/fab20"            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="30dp"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin10"
+        android:id="@+id/btn"
+        android:text="Calculate"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/li"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="Total:  "
+    android:layout_below="@id/btn"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:textColor="@android:color/holo_red_dark"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/totlaamttxt"
+            />
+    </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/li"
+    android:text="Confirm and Pickup"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="15sp"
+    android:id="@+id/confirm"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Charges of Rs 25 will be applied on all orders"
+        android:textAlignment="center"
+        android:layout_below="@id/confirm"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>
+</ScrollView>

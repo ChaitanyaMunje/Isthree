@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1094247972249",
+    "firebase_url": "https://isthree-b98af.firebaseio.com",
+    "project_id": "isthree-b98af",
+    "storage_bucket": "isthree-b98af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094247972249:android:1ff907607a00e7c6",
+        "android_client_info": {
+          "package_name": "com.example.hp.isthree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094247972249-nofp5t21dnahqb75teqk69n3p1n2is99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.isthree",
+            "certificate_hash": "5d1cb68d911e4720174fe6142f0a134292143321"
+          }
+        },
+        {
+          "client_id": "1094247972249-dq5a9qfa0l4i1rq7e0pf3hohbjs6vndi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZOCIpLNQA5v-5XxgQotze-vWixhHnJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094247972249-dq5a9qfa0l4i1rq7e0pf3hohbjs6vndi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

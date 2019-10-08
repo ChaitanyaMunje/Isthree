@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar"
+    tools:targetApi="lollipop"
+    android:id="@+id/toolbar"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:src="@drawable/iron"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isthree"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="45dp"
+        />
+</Toolbar>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/iron"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/userimg"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userimg"
+        android:textSize="20dp"
+        android:id="@+id/username"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userimg"
+        android:id="@+id/lin"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30sp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/backbutton"
+                android:drawableStart="@drawable/profile"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/profile" />
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/backbutton"
+                android:layout_weight="1"
+                android:text="Order"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:drawableStart="@drawable/ic_choices"
+                android:drawableLeft="@drawable/ic_choices" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <Button
+                android:background="@drawable/backbutton"
+                android:layout_margin="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/feedback"
+                android:id="@+id/feedback"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:text="Feedback"
+                android:drawableLeft="@drawable/feedback" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_share"
+                android:textSize="20dp"
+                android:text="Share"
+                android:textColor="@android:color/white"
+                android:background="@drawable/backbutton"
+                android:layout_weight="1"
+                android:id="@+id/share"
+
+                android:drawableLeft="@drawable/ic_share" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/backbutton"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/changeadd"
+                android:text="Change Address"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_choices" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/backbutton"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/ic_tracking"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/myorder"
+                android:text="My \n Orders"
+                android:drawableLeft="@drawable/ic_tracking" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:drawableTop="@drawable/ic_logout"
+            android:background="@drawable/backbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lin"
+            android:id="@+id/logoutbtn"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+</ScrollView>

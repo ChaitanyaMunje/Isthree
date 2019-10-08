@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tool1"
+    android:background="@color/toolbar">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img456"
+        android:background="@drawable/backbutton"
+        android:src="@drawable/iron"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Profile"
+    android:textSize="20dp"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:layout_marginLeft="20dp"/>
+</android.support.v7.widget.Toolbar>
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_below="@id/tool1"
+    android:layout_marginTop="40dp"
+    android:layout_height="wrap_content"
+    android:text="Username"
+    android:textSize="20dp"
+    android:textColor="@android:color/black"
+    android:gravity="center"
+    android:id="@+id/username"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:id="@+id/useraddresstxt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/useraddresstxt"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Mobile no"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:id="@+id/mobileno"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textaltmobileno"
+        android:layout_below="@id/mobileno"
+        android:text="Alternate Mobile no"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textaltmobileno"
+    android:text="Email id"
+    android:layout_marginTop="20dp"
+    android:textSize="20dp"
+    android:id="@+id/emailtxt"
+    android:textColor="@android:color/black"
+    android:gravity="center"
+    />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/emailtxt"
+        android:text="CALL US"
+        android:drawableTop="@drawable/ic_call"
+        android:textColor="@android:color/white"
+        android:background="@drawable/backbutton"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/callusbtn"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>

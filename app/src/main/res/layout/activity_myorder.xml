@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Myorder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t7"
+            android:background="@color/toolbar"
+            tools:ignore="NewApi">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/backbutton"
+                android:src="@drawable/iron"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Order"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+        </Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t7"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt3"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt4"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt5"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt5"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt6"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt6"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt7"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt7"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt8"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt8"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt9"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt9"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt10"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt10"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/txt11"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt11"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/status"
+            />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/status"
+    android:layout_centerHorizontal="true"
+    android:text="Cancel Order"
+    android:layout_marginTop="20dp"
+    android:id="@+id/cancelbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cancelbtn"
+            android:layout_centerHorizontal="true"
+            android:text="Rate our Service"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="ref"/>
+    </RelativeLayout>
+</ScrollView>
